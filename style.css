@@ -1,0 +1,53 @@
+html, body{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+}
+.topBar{
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    top: 0px;
+    height:30px;
+    width: 100%;
+    background-color:gray;
+    box-shadow: 0 4px 2px -2px gray;
+}
+/* Padding 10px
+   Width auto*/
+.navBar{
+    padding:10px;
+    width: auto;
+    margin: 0px;
+    position: absolute;
+    left: 0%;
+    background-color: rgb(54, 54, 54);
+    box-shadow: 1px 0px 2px 1px gray;
+}
+.navBar h3{
+    color: rgb(119, 118, 118);
+    font-size: 13px;
+}
+.navBar .item{
+    padding: 15px 100% 5px 5px;
+    border-bottom: 1px solid rgb(107, 107, 107);
+    vertical-align: 50%;
+    color: white;
+}
+.navBar a{
+    padding: 10px 90% 10px 20px;
+    display: block;
+    color:white;
+}
+.navBar .item:hover{
+    background-color: orange;
+    transition: .6s;
+    color: rgb(59, 59, 59);
+}
+.navBar a:hover{
+    background-color: orange;
+    color: rgb(59, 59, 59);
+    transition: .6s;
+}
+.content{
+}
