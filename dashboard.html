@@ -5,14 +5,16 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <section class="topBar">
+        <header class="topBar">
             <div class="topWrap">
-                <div class="hamburger"></div>
+                <div class="icon" id="icon" onclick="toggleNav()">
+                    <div class="hamburger"></div>
+                </div>
                 <div class="search"></div>
                 <div class="login"></div>
             </div>
-        </section>
-        <section class="navBar">
+        </header>
+        <nav class="navBar" id="navBar" style="width: 0px; padding: 0px;">
             <h1>Dashboard</h1>
             <h3>Navigation</h3>
             <div class="item">Item1</div>
@@ -33,7 +35,7 @@
             <div class="item">Item6</div>
                 <a href="#">Link1</a>
             <div class="item">Item7</div>
-        </section>
+        </nav>
         <section class="content">
             <div class="contentHeader">
                 <div class="contentTitle">Title</div>
@@ -56,5 +58,31 @@
                 <div class="card2">Card 2</div>
             </div>
         </section>
+
+        <script>
+            var navBar = document.getElementById("navBar");
+            var icon = document.getElementById("icon");
+            var link = document.getElementsByClassName("link");
+
+            function openNav(){
+                navBar.style.width = "13.4em";
+                navBar.style.padding = "10px";
+                navBar.style.boxShadow = "0px 0px .4em .2em gray";
+                icon.classList.add("active");
+            }
+            function closeNav(){
+                    navBar.style.width = "0px";
+                    navBar.style.padding = "0px";
+                    navBar.style.boxShadow = "none";
+                    icon.classList.remove("active");
+            }
+            function toggleNav(){
+                if(navBar.style.width === "0px"){
+                    openNav();
+                }else{
+                    closeNav();
+                }
+            }
+        </script>
     </body>
 </html>

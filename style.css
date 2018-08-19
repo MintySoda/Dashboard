@@ -2,42 +2,120 @@ html, body{
     padding: 0%;
     margin: 0%;
     display: flex;
+    height:auto;
+    width:auto;
 }
 .topBar{
     padding: 0%;
     margin: 0%;
     position: absolute;
     top: 0px;
-    height:30px;
+    height:9em;
     width: 100%;
     background-color:gray;
-    box-shadow: 0 4px 2px -2px gray;
+    box-shadow: 0 1em .5em -.5em gray;
 }
-/* Padding 10px
-   Width auto*/
+/* START HAMBUGER ICON*/
+.icon{
+    cursor: pointer;
+    position: absolute;
+    width: 17%;
+    height:100%;
+    position: relative;
+    border-right: 1px solid rgb(194, 192, 192);
+    z-index: 2;
+}
+
+.icon .hamburger{
+    height:12px;
+    width:65px;
+    background:white;
+    position: absolute;
+    top:50%;
+    left: 58px;
+    transition: .3s;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
+}
+.hamburger:before,
+.hamburger:after{
+    content: '';
+    background: white;
+    position: absolute;
+    height:12px;
+    width: 65px;
+    transition: .5s;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
+}
+
+.icon .hamburger:before{
+    top:-25px;   
+    transition:.5s;
+}
+.icon .hamburger:after{
+    top:25px;
+    transition: .5s;
+}
+
+.icon.active .hamburger{
+    background: rgb(0, 0, 0,0);
+    box-shadow: none;
+}
+
+.icon.active .hamburger:before{
+    transform: rotate(45deg);
+    top: 0%;
+    background:orange;
+}
+.icon.active .hamburger:after{
+    transform: rotate(310deg);
+    top: 0%;
+    background:orange;
+}
+
+/* END HANBURGER ICON */
+
+/* START NAVBAR */
+    /* WHEN ACTIVE:
+    Padding 10px
+    Width 13.4em*/
 .navBar{
-    padding:10px;
-    width: auto;
+    padding:0px;
+    width:0px;
     margin: 0px;
     position: absolute;
+    top: 3.2em;
     left: 0%;
     background-color: rgb(54, 54, 54);
-    box-shadow: 1px 0px 2px 1px gray;
+    font-size: 3em;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+.navBar h1{
+    font-size: 2.3em;
+    border:.4em solid orange;
+    border-left: none;
+    border-right: none;
+    margin: .5em;
 }
 .navBar h3{
     color: rgb(119, 118, 118);
-    font-size: 13px;
+    font-size: 1.2em;
 }
 .navBar .item{
-    padding: 15px 100% 5px 5px;
-    border-bottom: 1px solid rgb(107, 107, 107);
+    padding: .6em .7em .6em .7em;
+    border-top: 1px solid rgb(107, 107, 107);
     vertical-align: 50%;
+    font-size: 1.4em;
     color: white;
+    letter-spacing: 3px;
 }
 .navBar a{
-    padding: 10px 90% 10px 20px;
-    display: block;
+    padding: .3em 2.4em .3em 2.4em;
+    font-size: 1em;
+    display: none;
     color:white;
+    letter-spacing: 3px;
 }
 .navBar .item:hover{
     background-color: orange;
@@ -49,5 +127,7 @@ html, body{
     color: rgb(59, 59, 59);
     transition: .6s;
 }
+/* END NAVBAR */
+
 .content{
 }
