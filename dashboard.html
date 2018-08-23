@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
+        <!--START HEADER-->
         <header class="topBar">
             <div class="topWrap">
                 <div class="icon" id="icon" onclick="toggleNav()">
@@ -14,6 +15,9 @@
                 <div class="login"></div>
             </div>
         </header>
+        <!--END HEADER-->
+
+        <!--START NAVBAR-->
         <nav class="navBar" id="navBar" style="width: 0px; padding: 0px;">
             <h1>Dashboard</h1>
             <h3>Navigation</h3>
@@ -36,11 +40,75 @@
                 <a href="#">Link1</a>
             <div class="item">Item7</div>
         </nav>
+        <!--END NAVBAR-->
+
+        <!--START CONTENT-->
+
         <section class="content">
+
+            <!--START CONTENT-HEADER-->
             <div class="contentHeader">
-                <div class="contentTitle">Title</div>
-                <div class="contentTree">Content | Tree</div>
+                <div class="contentHeader-Wrapper">
+                    <div class="contentTitle">Title
+                        <div class="contentSubtitle">Subtitle </div>
+                    </div> <hr>
+                    <div class="contentTree">Content > Tree</div>
+                </div>
             </div>
+            <!--END CONTENT-HEADER-->
+
+            <!--START INFOBOX-->
+            <div class="infoBox-Outer">
+                <div class="infoBox-Wrapper">
+                    <div class="infoBox-Left">
+                        <span>Orange</span>
+                    </div>
+                    <div class="infoBox-Right">
+                        <p id="outerPara">a round juicy <span style="color:orange; font-size: 1.7em; letter-spacing: 2px;">citrus fruit </span>with a tough bright reddish-yellow rind.</p>
+                    </div>
+                </div>
+            </div>
+            <!--END INFOBOX-->
+
+             <!--START INFOBOX-->
+            <div class="infoBox-Outer" style="margin-top: 3em;">
+                <div class="infoBox-Wrapper">
+                    <div class="infoBox-Left" style="background-color: mediumseagreen; width:72%;">
+                        <span style="padding-top: 37%;">Kiwi</span>
+                    </div>
+                    <div class="infoBox-Right">
+                        <p id="outerPara">a round juicy <span style="color:mediumseagreen; font-size: 1.7em; letter-spacing: 2px;">hairy fruit </span>with a hairy outer layer and buncha seeds inside.</p>
+                    </div>
+                </div>
+            </div>
+            <!--END INFOBOX-->
+
+             <!--START INFOBOX-->
+            <div class="infoBox-Outer" style="margin-top: 3em;">
+                <div class="infoBox-Wrapper" style="border-radius: 0px;">
+                    <div class="infoBox-Left" style="background-color: red; border-radius: 0px; width: 55%;">
+                        <span style="font-size: 4.3em; padding-top: .9em; padding-left: .2em; padding-right:.2em;">Straw - berry</span>
+                    </div>
+                    <div class="infoBox-Right">
+                        <p id="outerPara">a sweet soft <span style="color:red; font-size: 1.7em; letter-spacing: 2px;">red fruit </span>with a seed-studded surface.</p>
+                    </div>
+                </div>
+            </div>
+            <!--END INFOBOX-->
+
+             <!--START INFOBOX-->
+            <div class="infoBox-Outer" style="margin-top: 3em;">
+                <div class="infoBox-Wrapper" style="border-radius: 0px;">
+                    <div class="infoBox-Left" style="background-color: dodgerblue; border-radius: 0px;">
+                        <span style="font-size: 4.7em; padding-top: .5em;">Blue-berry</span>
+                    </div>
+                    <div class="infoBox-Right">
+                        <p id="outerPara">a sweet soft <span style="color:dodgerblue; font-size: 1.7em; letter-spacing: 2px;">lil blue fruit </span>with a name like strawberry.</p>
+                    </div>
+                </div>
+            </div>
+            <!--END INFOBOX-->
+
             <div class="statisticData">
                 <div class="statData">data1</div>
                 <div class="statData">data2</div>
@@ -55,15 +123,15 @@
             </div>
             <div class="reviewCard">
                 <div class="card1">Card 1</div>
-                <div class="card2">Card 2</div>
+                <div class="card1">Card 2</div>
             </div>
         </section>
+        <!--END CONTENT-->
 
         <script>
             var navBar = document.getElementById("navBar");
             var icon = document.getElementById("icon");
             var link = document.getElementsByClassName("link");
-
             function openNav(){
                 navBar.style.width = "13.4em";
                 navBar.style.padding = "10px";

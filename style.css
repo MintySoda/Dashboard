@@ -4,16 +4,17 @@ html, body{
     display: flex;
     height:auto;
     width:auto;
+    overflow-x: scroll;
 }
 .topBar{
     padding: 0%;
     margin: 0%;
     position: absolute;
     top: 0px;
+    left:0%;
     height:9em;
     width: 100%;
     background-color:gray;
-    box-shadow: 0 1em .5em -.5em gray;
 }
 /* START HAMBUGER ICON*/
 .icon{
@@ -43,17 +44,17 @@ html, body{
     position: absolute;
     height:12px;
     width: 65px;
-    transition: .5s;
+    transition: .1s;
     box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
 }
 
 .icon .hamburger:before{
     top:-25px;   
-    transition:.5s;
+    transition:.1s;
 }
 .icon .hamburger:after{
     top:25px;
-    transition: .5s;
+    transition: .1s;
 }
 
 .icon.active .hamburger{
@@ -89,10 +90,11 @@ html, body{
     font-size: 3em;
     overflow-x: hidden;
     z-index: 1;
-    transition: .5s;
+    transition: .2s;
 }
 .navBar h1{
     font-size: 2.3em;
+    color:#F2E3BB;
     border:.4em solid orange;
     border-left: none;
     border-right: none;
@@ -129,5 +131,89 @@ html, body{
 }
 /* END NAVBAR */
 
+
+/*START CONTENT*/
 .content{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:10em;
 }
+
+/*START CONTENT-HEADER*/
+.contentHeader{
+    height:10em;
+    width:100%;
+    font-size: 2.4em;
+    
+}
+.contentHeader-Wrapper{
+    padding: .7em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.contentTitle{
+    font-size: 2.7em;
+    display: inline;
+}
+.contentSubtitle{
+    font-size: .5em;
+    color:#B5B4B4;
+    margin-left: .3em;
+    text-align: center;
+    display: inline;
+    vertical-align: center;
+}
+.contentTree{
+    background-color: #EDE5D0;
+    padding:.4em;
+}
+/*END CONTENT-HEADER*/
+
+.infoBox-Outer{
+    width:100%;
+    height:16em;
+}
+.infoBox-Wrapper{
+    height:100%;
+    margin-right: 3em;
+    margin-left: 3em;
+    border: 2px solid #A5A5A5;
+    border-radius: 3em;
+    box-shadow: 0px 6px 6px -1px gray;
+    overflow:hidden;
+    display:flex;
+}
+.infoBox-Left{
+    width:35em;
+    height:100%;
+    border-right: 2px solid white;
+    background-color: orange;
+    border-bottom-left-radius: 1.2em;
+    border-top-left-radius: 1.2em;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    word-break: break-all; 
+    -ms-word-break:break-all;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+}
+.infoBox-Left span{
+    padding: 32% 15% 0% 15%;
+    color:white;
+    margin:0px;
+    font-size: 3.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+}
+.infoBox-Right #outerPara{
+    padding: 6% 2% 2% 6%;
+    margin: 0px;
+    font-size: 2.6em;
+}
+
+
+/*END CONTENT*/
