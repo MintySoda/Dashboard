@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
+
+        <!-- START HEADER -->
         <header class="topBar">
             <div class="topWrap">
                 <div class="icon" id="icon" onclick="toggleNav()">
@@ -14,6 +16,9 @@
                 <div class="login"></div>
             </div>
         </header>
+        <!-- END HEADER -->
+
+        <!-- START NAVBAR -->
         <nav class="navBar" id="navBar" style="width: 0px; padding: 0px;">
             <h1>Dashboard</h1>
             <h3>Navigation</h3>
@@ -36,28 +41,76 @@
                 <a href="#">Link1</a>
             <div class="item">Item7</div>
         </nav>
+        <!-- END NAVBAR -->
+
+        <!-- START CONTENT -->
         <section class="content">
-            <div class="contentHeader">
-                <div class="contentTitle">Title</div>
-                <div class="contentTree">Content | Tree</div>
-            </div>
-            <div class="statisticData">
-                <div class="statData">data1</div>
-                <div class="statData">data2</div>
-                <div class="statData">data3</div>
-                <div class="statData">data4</div>
-                <div class="statData">data5</div>
-            </div>
-            <div class="graphs">
-                <div class="circleGraph">Circle Graph</div>
-                <div class="barGraph">Bar Graph</div>
-                <div class="lineGraph">Line Graph</div>
-            </div>
-            <div class="reviewCard">
-                <div class="card1">Card 1</div>
-                <div class="card2">Card 2</div>
+            <div class="contentContainer">
+
+                <!-- START CONTENT HEADER -->
+                <div class="contentHeader">
+                    <div class="contentHeader-Wrap">
+                        <div class="contentTitle">Title</div>
+                        <div class="contentTree"><h3>Content | Tree</h3></div>
+                    </div>
+                    <hr>
+                </div>
+                <!-- END CONTENT HEADER -->
+    
+                <!-- START STAT DATA -->
+                <div class="statContent">
+                    <div class="row">
+                        <div class="card">
+                            <div class="cardTitle">
+                                <h2>Title1</h2>
+                            </div>
+                            <div class="cardBody">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardTitle">
+                                 <h2>Title2</h2>
+                            </div>
+                            <div class="cardBody">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardTitle">
+                                 <h2>Title3</h2>
+                            </div>
+                            <div class="cardBody">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardTitle">
+                                 <h2>Title4</h2>
+                            </div>
+                            <div class="cardBody">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END STAT DATA -->
+    
+    
+                <div class="graphs">
+                    <div class="circleGraph">Circle Graph</div>
+                    <div class="barGraph">Bar Graph</div>
+                    <div class="lineGraph">Line Graph</div>
+                </div>
+                <div class="reviewCard">
+                    <div class="card1">Card 1</div>
+                    <div class="card2">Card 2</div>
+                </div>
             </div>
         </section>
+        <!-- END CONTENT -->
+
+
 
         <script>
             var navBar = document.getElementById("navBar");
