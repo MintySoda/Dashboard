@@ -1,133 +1,101 @@
-html, body{
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    height:auto;
-    width:auto;
-}
-.topBar{
-    padding: 0%;
-    margin: 0%;
-    position: absolute;
-    top: 0px;
-    height:9em;
-    width: 100%;
-    background-color:gray;
-    box-shadow: 0 1em .5em -.5em gray;
-}
-/* START HAMBUGER ICON*/
-.icon{
-    cursor: pointer;
-    position: absolute;
-    width: 17%;
-    height:100%;
+body {
+    font-size: .875rem;
+  }
+  
+  .feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+  
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  .sidebar-sticky {
     position: relative;
-    border-right: 1px solid rgb(194, 192, 192);
-    z-index: 2;
-}
-
-.icon .hamburger{
-    height:12px;
-    width:65px;
-    background:white;
-    position: absolute;
-    top:50%;
-    left: 58px;
-    transition: .3s;
-    box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
-}
-.hamburger:before,
-.hamburger:after{
-    content: '';
-    background: white;
-    position: absolute;
-    height:12px;
-    width: 65px;
-    transition: .5s;
-    box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
-}
-
-.icon .hamburger:before{
-    top:-25px;   
-    transition:.5s;
-}
-.icon .hamburger:after{
-    top:25px;
-    transition: .5s;
-}
-
-.icon.active .hamburger{
-    background: rgb(0, 0, 0,0);
-    box-shadow: none;
-}
-
-.icon.active .hamburger:before{
-    transform: rotate(45deg);
-    top: 0%;
-    background:orange;
-}
-.icon.active .hamburger:after{
-    transform: rotate(310deg);
-    top: 0%;
-    background:orange;
-}
-
-/* END HANBURGER ICON */
-
-/* START NAVBAR */
-    /* WHEN ACTIVE:
-    Padding 10px
-    Width 13.4em*/
-.navBar{
-    padding:0px;
-    width:0px;
-    margin: 0px;
-    position: absolute;
-    top: 3.2em;
-    left: 0%;
-    background-color: rgb(54, 54, 54);
-    font-size: 3em;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
     overflow-x: hidden;
-    z-index: 1;
-    transition: .5s;
-}
-.navBar h1{
-    font-size: 2.3em;
-    border:.4em solid orange;
-    border-left: none;
-    border-right: none;
-    margin: .5em;
-}
-.navBar h3{
-    color: rgb(119, 118, 118);
-    font-size: 1.2em;
-}
-.navBar .item{
-    padding: .6em .7em .6em .7em;
-    border-top: 1px solid rgb(107, 107, 107);
-    vertical-align: 50%;
-    font-size: 1.4em;
-    color: white;
-    letter-spacing: 3px;
-}
-.navBar a{
-    padding: .3em 2.4em .3em 2.4em;
-    font-size: 1em;
-    display: none;
-    color:white;
-    letter-spacing: 3px;
-}
-.navBar .item:hover{
-    background-color: orange;
-    transition: .6s;
-    color: rgb(59, 59, 59);
-}
-.navBar a:hover{
-    background-color: orange;
-    color: rgb(59, 59, 59);
-    transition: .6s;
-}
-/* END NAVBAR */
-
-.content{
-}
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #007bff;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  
+  /*
+   * Content
+   */
+  
+  [role="main"] {
+    padding-top: 48px; /* Space for fixed navbar */
+  }
+  
+  /*
+   * Navbar
+   */
+  
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  }
+  
+  .navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+  }
+  
+  .form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+  }
+  
+  .form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+  
