@@ -11,129 +11,79 @@
 
     <!-- START HEADER -->
     <header class="topBar">
-        <div class="topWrap">
+        <div class="top-wrapper">
             <div class="icon" id="icon" onclick="toggleNav()">
                 <div class="hamburger"></div>
             </div>
-            <div class="search"></div>
-            <div class="login"></div>
+            <div class="search-wrapper">
+                <form class="search-form">
+                    <input type="search" name="Search" id="search-box">
+                    <input type="submit" value="Search" id="search-button">
+                </form>
+            </div>
+            <div class="login-wrapper">
+                <a href="#" class="login-link link">Login</a>
+            </div>
         </div>
     </header>
     <!-- END HEADER -->
 
-    <!-- START NAVBAR -->
-    <nav class="navBar" id="navBar" style="width: 0px; padding: 0px;">
-        <h1>Dashboard</h1>
-        <h3>Navigation</h3>
-        <div class="item">Item1</div>
-        <a href="#">Link1</a>
-        <a href="#">Link2</a>
-        <div class="item">Item2</div>
-        <a href="#">Link1</a>
-        <div class="item">Item3</div>
-        <a href="#">Link1</a>
-        <a href="#">Link2</a>
-        <a href="#">Link3</a>
-        <div class="item">Item4</div>
-        <a href="#">Link1</a>
-        <div class="item">Item5</div>
-        <a href="#">Link1</a>
-        <a href="#">Link2</a>
-        <a href="#">Link3</a>
-        <div class="item">Item6</div>
-        <a href="#">Link1</a>
-        <div class="item">Item7</div>
-    </nav>
-    <!-- END NAVBAR -->
-
     <!-- START CONTENT -->
     <main class="content">
-        <div class="contentContainer">
 
-            <!-- START CONTENT HEADER -->
-            <div class="contentHeader">
-                <div class="contentHeader-Wrap">
-                    <div class="contentTitle">Title</div>
-                    <div class="contentTree">
-                        <h3>Content | Tree</h3>
+        <!-- START NAVBAR -->
+        <nav class="navBar" id="navBar" style="width: 0px; padding: 0px;">
+            <h1>Dashboard</h1>
+            <h3>Navigation</h3>
+            <div class="item">Item1</div>
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <div class="item">Item2</div>
+            <a href="#">Link1</a>
+            <div class="item">Item3</div>
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <div class="item">Item4</div>
+            <a href="#">Link1</a>
+            <div class="item">Item5</div>
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <div class="item">Item6</div>
+            <a href="#">Link1</a>
+            <div class="item">Item7</div>
+        </nav>
+        <!-- END NAVBAR -->
+
+        <div class="content-container">
+            <div class="content-header">
+                <div class="content-header-wrapper">
+                    <div class="content-header-title">
+                        <h1 class="content-header-title-name">Home</h1>
                     </div>
-                </div>
-                <hr>
-            </div>
-            <!-- END CONTENT HEADER -->
-
-            <!-- START STAT DATA -->
-            <div class="statContent">
-                <div class="row">
-                    <div class="card">
-                        <div class="cardTitle">
-                            <h2>Inuyasha</h2>
+                    <div class="content-header-sub">
+                        <div class="content-header-sub-links">
+                            <a class="link content-header-sub-link" href="#">Dashboard</a>
+                            <a class="link content-header-sub-link" href="#">Reports</a>
+                            <a class="link content-header-sub-link" href="#">Details</a>
                         </div>
-                        <div class="cardBody">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardTitle">
-                            <h2>Luffy</h2>
-                        </div>
-                        <div class="cardBody">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardTitle">
-                            <h2>Ichigo</h2>
-                        </div>
-                        <div class="cardBody">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardTitle">
-                            <h2>Naruto</h2>
-                        </div>
-                        <div class="cardBody">
-
+                        <div class="content-header-buttons">
+                            <button>New Ticket</button>
+                            <button>Import </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- END STAT DATA -->
+            <div class="card">
+                <div class="card-wrapper">
+                    <div class="card-header">
 
+                    </div>
+                    <div class="card-body">
 
-            <div class="graphs">
-                <div class="circleGraph">Circle Graph</div>
-                <div class="barGraph">
-                    <dl>
-                        <dt>Title</dt>
-                        <dd class="percentage percentage-20">
-                            <span class="text">
-                                Inuyasha 1: 20%
-                            </span>
-                        </dd>
-                        <dd class="percentage percentage-50">
-                            <span class="text">
-                                Luffy 2: 50%
-                            </span>
-                        </dd>
-                        <dd class="percentage percentage-30">
-                            <span class="text">
-                                Ichigo 3: 10%
-                            </span>
-                        </dd>
-                        <dd class="percentage percentage-30">
-                            <span class="text">
-                                Naruto 4: 20%
-                            </span>
-                        </dd>
-                    </dl>
+                    </div>
                 </div>
-                <div class="lineGraph">Line Graph</div>
-            </div>
-            <div class="reviewCard">
-                <div class="card1">Card 1</div>
-                <div class="card2">Card 2</div>
             </div>
         </div>
     </main>
