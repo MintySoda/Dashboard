@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Dashboard</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/main.css" type="text/css">
     </head>
     <body>
+        <div id="bg"></div>
 
         <!-- START HEADER -->
         <header class="topBar">
@@ -44,7 +45,7 @@
         <!-- END NAVBAR -->
 
         <!-- START CONTENT -->
-        <section class="content">
+        <main class="content">
             <div class="contentContainer">
 
                 <!-- START CONTENT HEADER -->
@@ -62,7 +63,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="cardTitle">
-                                <h2>Title1</h2>
+                                <h2>Inuyasha</h2>
                             </div>
                             <div class="cardBody">
 
@@ -70,7 +71,7 @@
                         </div>
                         <div class="card">
                             <div class="cardTitle">
-                                 <h2>Title2</h2>
+                                 <h2>Luffy</h2>
                             </div>
                             <div class="cardBody">
 
@@ -78,7 +79,7 @@
                         </div>
                         <div class="card">
                             <div class="cardTitle">
-                                 <h2>Title3</h2>
+                                 <h2>Ichigo</h2>
                             </div>
                             <div class="cardBody">
 
@@ -86,7 +87,7 @@
                         </div>
                         <div class="card">
                             <div class="cardTitle">
-                                 <h2>Title4</h2>
+                                 <h2>Naruto</h2>
                             </div>
                             <div class="cardBody">
 
@@ -99,7 +100,31 @@
     
                 <div class="graphs">
                     <div class="circleGraph">Circle Graph</div>
-                    <div class="barGraph">Bar Graph</div>
+                    <div class="barGraph">
+                        <dl>
+                            <dt>Title</dt>
+                            <dd class="percentage percentage-20">
+                              <span class="text">
+                                Inuyasha 1: 20%
+                              </span>
+                            </dd>
+                            <dd class="percentage percentage-50">
+                              <span class="text">
+                                Luffy 2: 50%
+                              </span>
+                            </dd>
+                            <dd class="percentage percentage-30">
+                              <span class="text">
+                                Ichigo 3: 10%
+                              </span>
+                            </dd>
+                            <dd class="percentage percentage-30">
+                                <span class="text">
+                                  Naruto 4: 20%
+                                </span>
+                            </dd>
+                          </dl>
+                    </div>
                     <div class="lineGraph">Line Graph</div>
                 </div>
                 <div class="reviewCard">
@@ -107,7 +132,7 @@
                     <div class="card2">Card 2</div>
                 </div>
             </div>
-        </section>
+        </main>
         <!-- END CONTENT -->
 
 
