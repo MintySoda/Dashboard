@@ -1,3 +1,9 @@
+/*  Base size is iPhone 6/7/8
+    Base browser: chrome
+    width:375
+    height:667
+*/
+
 $colors: (
     accent: orange,
     back:gray,
@@ -38,7 +44,10 @@ body {
         
         .icon{
             cursor: pointer;
-            position: absolute;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 17%;
             height:100%;
             border-right: 1px solid rgb(194, 192, 192);
@@ -47,31 +56,44 @@ body {
             .hamburger{
                 height:12px;
                 width:65px;
-                background: white;
-                position: absolute;
-                top: 50%;
-                left:58px;
+                background: rgb(15, 200, 240);
+                position: relative;
                 transition: 0.3s;
-                box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
 
-                :before,
-                :after{
+                &::before{
                     content:"";
-                    background:white;
+                    background:rgb(15, 200, 240);
                     position: absolute;
                     height:12px;
                     width: 65px;
                     transition: 0.3s;
-                    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+                    top: -25px;
                 }
-            }
+                &::after{
+                    content:"";
+                    background:rgb(15, 200, 240);
+                    position: absolute;
+                    height:12px;
+                    width: 65px;
+                    transition: 0.3s;
+                    top: 25px;
+                }
 
-            .hamburger:before{
-                top: -25px;
-                transition: 0.3s;
             }
         }
-    }
-    
+        .icon.active .hamburger{
+            background-color: rgba(0, 0, 0, 0);
+            transition: 0.3s;
+        }
+        .icon.active .hamburger::before{
+            transform: rotate(45deg);
+            top:0%;
+            background:white;
+        }
+        .icon.active .hamburger::after{
+            transform: rotate(310deg);
+            top:0%;
+            background:white;
+        }
+    }    
 }
-
